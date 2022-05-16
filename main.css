@@ -1,0 +1,190 @@
+/* font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body {
+  margin: 3px;
+  padding: 5px;
+  background-image: url("./images/background/backgorundwalks.JPG");
+  background-size: cover;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+h1 {
+  padding: 5px;
+  margin: 5px;
+  color: aliceblue;
+  font-size: 32px;
+  font-style: bold;
+  text-shadow: 1px 1px 1px rgba(11, 11, 11, 0.444), 
+             1px 1px 3px rgba(0, 0, 0, 0.444); 
+}
+
+h2 {
+  margin: 30px;
+  padding: 20px;
+  color: aliceblue;
+  font-size: 24px;
+  font-style: bold;
+  text-shadow: 1px 1px 1px rgba(11, 11, 11, 0.444), 
+             1px 1px 3px rgba(0, 0, 0, 0.444); 
+}
+
+p {  
+  padding-bottom: 10px;
+  color: aliceblue;
+  font-size: 14px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.678);
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  text-align: center;
+  font-style: bold;
+  text-shadow:rgb(255, 255, 255)
+}
+
+/* Add a background color to the top navigation bar */
+#topNav {
+  background-color: rgba(0, 0, 0, 0.767);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Style the links inside the navigation bar */
+/* using float property */
+#topNav a {
+  float: left;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Change the color of links on hover */
+/* using hover selector over links*/
+#topNav a:hover {
+  background-color: rgb(71, 170, 170);
+  color: rgb(255, 255, 255);
+}
+
+/* Add a color to the active/current link */
+#topNav a.active {
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  height: 42px;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+
+/* Black background */
+.backToBlack {
+  background-color: rgba(0, 0, 0, 0.688);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-style: normal;
+  color: aliceblue;
+
+}
+
+  /* White background */
+.backToWhite {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.455);
+  display: flex;
+  justify-content: center;
+}
+
+.centreText {
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+.centreHeadings {
+  padding: 5px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.toTheLeft {
+  background-color: rgba(8, 8, 8, 0);
+  display: flex;
+  justify-content: left;
+}
+
+/* Displaying images in rows and columns  */
+.row {
+  padding: 5px;
+  display: flex;
+  background-color:  rgba(255, 255, 255, 0.767);
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.description {
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* a container for images */
+.container {
+  background: rgba(255, 255, 255, 0.767);
+  margin: auto 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container .box {
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  margin: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.container .box .imgBox {
+  position: relative;
+}
+
+.container .box .imgBox img {
+  max-width: 100%;
+  transition: transform 2s;
+}
+
+/* using hover to scale the image up  */
+.container .box:hover .imgBox img {
+  transform: scale(1.07);
+}

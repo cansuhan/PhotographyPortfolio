@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../slider.css">
+</head>
+
+<body>
+    <!-- Navigation Bar on top of the page -->
+    <div id="topNav">
+        <a href="../index.html">
+            <img class="logo" src="../images/logooo.png"><b>Cansu's Camera Roll</b></a>
+        <a href="../index.html">Home</a>
+        <a href="./page2.html">Lomochrome Purple</a>
+        <a href="./page3.html">Red Brick Dust</a>
+        <a class="active" href="./about.html">About Me</a>
+        <!-- <a href="#about">Kozmic Blues</a>
+    <a href="#about">Green Machine</a> -->
+    </div>
+
+    <!-- About Page -->
+    <!-- <header> -->
+    <div class="centreHeadings">
+
+        <h2>About Me</h2>
+        <p>I am an amateur photographer.
+            <br>
+            I've been wanting to build my own photography website for a while and found Code First
+            Girls!
+            <br>
+            <br>
+            The video below is from when I was working as an archaeologist in Cyprus.
+            <br>
+            The pandemic disrupted excavations and
+            jobs in archaeology, so I decided to embark on a journey with coding and currently I am a sofware engineer
+            apprentice at BAE Systems Digital Intelligence.
+            <br>
+            <br>
+            <br>
+        </p>
+    </div>
+
+
+    <div class="backToWhite">
+        <video class="centreText" width="420" height="240" controls>
+            <source src="../video/FieldworkTimeLapse.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="backToWhite">
+        <table>
+            <tr>
+                <th>Video</th>
+            </tr>
+            <tr>
+                <td>A short video clip I compiled during an archaeological fieldwork in Cyprus.</td>
+            <tr>
+                <th>How it was made</th>
+            </tr>
+            <tr>
+                <td>This was part of a personal project I undertook called 'Moving Images', using time-lapse method to
+                    create videos.</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Sliding images  -->
+    <div class="slideshow">
+
+        <div class="mySlides fade">
+            <img src="../images/blues/whitby.JPG" class="img" width="620em" height="auto">
+            <div class="overlay">
+                <div class="centreText">
+                    <p class="text">
+                        <a class="link" href=""><big><b>Whitby</b></big></a>
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quis accusamus, odit
+                        architecto error vitae corporis laudantium ex eligendi soluta consequuntur labore. Iusto vero
+                        officiis illo accusamus dolorem aliquam blanditiis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../images/blues/whitby2.JPG" class="img" width="620em" height="auto">
+            <div class="overlay">
+                <div class="centreText">
+                    <p class="text">
+                        <a class="link" href=""><big><b>Whitby</b></big></a>
+                        <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio velit sit asperiores, enim
+                        accusamus fugit molestias cupiditate maxime laboriosam ea perferendis voluptatem! Laborum animi
+                        numquam consequatur minima placeat officia id!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../images/blues/merc.jpg" class="img" width="620em" height="auto">
+            <div class="overlay">
+                <div class="centreText">
+                    <p class="text">
+                        <a class="link" href=""><big><b>Manchester</b></big></a>
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, illum. Dolorem vitae, minima
+                        rerum cumque architecto aliquam accusantium aperiam at odit nobis fugit provident pariatur fuga
+                        deserunt reiciendis quibusdam atque?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../images/blues/cyprus.JPG" class="img" width="620em" height="auto">
+            <div class="overlay">
+                <div class="centreText">
+                    <p class="text">
+                        <a class="link" href=""><big><b>Cyprus</b></big></a>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium recusandae debitis,
+                        consequuntur distinctio sunt suscipit consequatur numquam molestiae assumenda fuga temporibus
+                        perspiciatis sint ratione facilis esse, eligendi ut! Soluta, ipsam!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../images/blues/cyprussky.JPG" class="img" width="620em" height="auto">
+            <div class="overlay">
+                <div class="centreText">
+                    <p class="text">
+                        <a class="link" href=""><big><b>Cyprus</b></big></a>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam laudantium, iure
+                        aperiam dolorem corrupti quisquam suscipit in temporibus, recusandae tenetur? Voluptas amet ut,
+                        recusandae aut quos architecto iusto consequatur?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <br>
+
+    <!-- javascript -->
+    <script src="../slider.js"></script>
+
+    <footer class="backToBlack">
+        <div>
+            Made by Cansu
+            <br>
+            May 2022
+            <br>
+            Thank you for viweing my website.
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
